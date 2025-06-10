@@ -1,3 +1,4 @@
+import { Search } from "lucide-react";
 import { useState } from "react";
 
 export default function Weather() {
@@ -28,6 +29,7 @@ export default function Weather() {
       const data = await response.json();
 
       if (response.ok) {
+        setError("");
         setWeatherData({
           temperature: Math.round(data.main.temp),
           location: `${data.name}, ${data.sys.country}`,
@@ -69,11 +71,9 @@ export default function Weather() {
             />
             <button
               onClick={searchWeather}
-              className="bg-orange-500 hover:bg-orange-600 transition-colors rounded-2xl"
+              className="bg-orange-500 hover:bg-orange-600 transition-colors p-3 rounded-2xl cursor-pointer outline-0"
             >
-              <span className="material-symbols-outlined p-2.5 sm:p-3 text-white">
-                {"search"}
-              </span>
+              <Search size={24} />
             </button>
           </div>
 
