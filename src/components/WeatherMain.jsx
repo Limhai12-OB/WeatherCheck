@@ -58,17 +58,20 @@ export default function Weather() {
         }}
       >
         <div className="bg-white/10 w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl p-4 sm:p-6 md:p-8 lg:p-12 text-white text-center rounded-2xl backdrop-blur-sm">
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-8 sm:mb-12">
+          <div className="flex items-center justify-center gap-3 sm:gap-4 lg:gap-5 mb-8 sm:mb-10 lg:mb-10">
             <input
               type="text"
               placeholder="Enter city name"
               value={city}
               onChange={(e) => setCity(e.target.value)}
               onKeyPress={handleKeyPress}
-              className="w-full sm:flex-1 px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 bg-white/15 rounded-2xl outline-0 placeholder-white/70 text-white text-sm sm:text-base"
+              className="flex-1 bg-white/15 py-2.5 sm:py-3 px-4 sm:px-8 md:px-15 lg:px-20 rounded-2xl outline-0 placeholder-white/70 text-white text-sm sm:text-base"
             />
-            <button onClick={searchWeather} className="w-full sm:w-auto">
-              <span className="material-symbols-outlined bg-orange-500 hover:bg-orange-600 transition-colors cursor-pointer p-2.5 sm:p-3 rounded-xl text-white">
+            <button
+              onClick={searchWeather}
+              className="bg-orange-500 hover:bg-orange-600 transition-colors rounded-2xl"
+            >
+              <span className="material-symbols-outlined p-2.5 sm:p-3 text-white">
                 {"search"}
               </span>
             </button>
