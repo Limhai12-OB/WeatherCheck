@@ -99,7 +99,7 @@ export default function Weather() {
             </h2>
 
             <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 md:gap-6">
-              <div className="flex-1 bg-white/10 rounded-2xl py-4 sm:py-5 px-4 sm:px-6 md:px-8 text-center backdrop-blur-sm">
+              <div className="flex-1 bg-white/5 rounded-2xl py-4 sm:py-5 px-4 sm:px-6 md:px-8 text-center backdrop-blur-sm">
                 <div className="w-8 h-8 sm:w-10 sm:h-10 mx-auto bg-white/20 p-1.5 sm:p-2 mb-2 sm:mb-3 rounded-full flex items-center justify-center">
                   <img
                     src="https://cdn-icons-png.flaticon.com/512/728/728093.png"
@@ -113,7 +113,7 @@ export default function Weather() {
                 <div className="text-xs sm:text-sm opacity-80">Humidity</div>
               </div>
 
-              <div className="flex-1 bg-white/10 rounded-2xl py-4 sm:py-5 px-4 sm:px-6 md:px-8 text-center backdrop-blur-sm">
+              <div className="flex-1 bg-white/5 rounded-2xl py-4 sm:py-5 px-4 sm:px-6 md:px-8 text-center backdrop-blur-sm">
                 <div className="w-8 h-8 sm:w-10 sm:h-10 mx-auto bg-white/20 p-1.5 sm:p-2 mb-2 sm:mb-3 rounded-full flex items-center justify-center">
                   <img
                     src="https://cdn-icons-png.flaticon.com/512/1959/1959244.png"
